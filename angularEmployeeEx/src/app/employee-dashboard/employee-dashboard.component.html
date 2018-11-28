@@ -1,0 +1,8 @@
+<h3>Top Employees</h3>
+<div>
+  <a *ngFor="let emp of employees" routerLink="/empDetails/{{emp.id}}">
+    <div>
+      <h4>{{emp.name}}</h4>
+    </div>
+  </a>
+</div>

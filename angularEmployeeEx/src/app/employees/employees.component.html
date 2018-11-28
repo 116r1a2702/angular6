@@ -1,0 +1,8 @@
+<h2>My Employees</h2>
+<ul>
+  <li *ngFor='let emp of mockEmployees'>
+    <a routerLink="/empDetails/{{emp.id}}">
+      <span>{{emp.id}}</span> {{emp.name}}
+    </a>
+  </li>
+</ul>
